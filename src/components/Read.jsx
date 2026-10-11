@@ -1,6 +1,6 @@
-import Movies from "./Movies"
+import Movies from "./Movies" //imports movies to display
 export default function Read() {
-    const movies = [
+    const movies = [ //Stores the movies in an array
   {
     "Title": "Avengers: Infinity War",
     "Year": "2018",
@@ -27,7 +27,7 @@ export default function Read() {
   return (
   <div>
   <h1>Read</h1>
-  <Movies movies={movies}></Movies>
+  <Movies movies={movies}></Movies> //Passes the array to Movies.jsx
   </div>
 
  ) 

@@ -1,8 +1,9 @@
-import MovieItem from "./MovieItem";
+import MovieItem from "./MovieItem";  {/*Imports movieItem */}
 export default function Movies(props){
-    return props.movies.map(
+    {/*Loops through each moving in the array */}
+    return props.movies.map( 
         (movie)=>{
-            return <MovieItem mymovie={movie} key={movie.imbdID}></MovieItem>
+            return <MovieItem mymovie={movie} key={movie.imdbID}></MovieItem> //Passes the current movie to Movie Item and gives it a unique key
         }
     )
 }
